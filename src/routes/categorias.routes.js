@@ -14,6 +14,4 @@ router.delete("/:id", categoriaController.deleteCategry);
 /*Ruta que recibe como parametro tanto el cuerpo id a actualizar */
 router.put("/:id", categoriaController.updateCategorias);
 
-
-
 export default router;
