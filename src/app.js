@@ -12,6 +12,9 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api/categorias", categoriasRoutes);
+app.get('/',(req,res)=>{
+    res.send('REST API EN RENDER WITHIUT DATABASE ENDPONITS')
+})
 app.use("/api/empleados", empleadosRoutes);
 app.use("/api/clientes", clientesRoutes);
 app.use("/api/productos", productosRoutes); 
